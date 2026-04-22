@@ -6,7 +6,7 @@
 ## 📊 Usage
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/bikeshare.git
+   git clone https://github.com/ybienfait/post-your-work-project_Intro-to-version-control
    cd bikeshare
    ```
 2. **Install dependencies**
@@ -38,7 +38,8 @@ Please follow PEP 8 style guidelines and keep commits small and focused.
 * Project created and maintained by the Bikeshare development team
 * Sample data inspired by public bikeshare datasets (e.g., city open data portals)
 
-## Date created
+## Change dates
 
 README:         22 April 2026
+
 Project V0.1:   22 April 2026
