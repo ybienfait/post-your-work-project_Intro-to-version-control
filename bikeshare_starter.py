@@ -134,7 +134,25 @@ def user_stats(df):
 
 
 def main():
+    sleeptime = 2
     while True:
+        reloop = input('\nGood Morning! Welcome to the Bikeshare project. Would you like to "start", "exit" or "get help"?\n')
+        if reloop.lower() != 'start':
+            print('\nGreat! Let\'s get started!')
+            time.sleep(sleeptime)
+            sleeptime += 2
+            continue
+        elif reloop.lower() == 'exit':
+            print('\AAAWW! Goodbye then!')
+            time.sleep(sleeptime)
+            sleeptime += 2
+            continue
+        else:
+             print('\nLet\'s get you some help then...')
+             time.sleep(sleeptime)
+             sleeptime += 2
+             continue
+
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
