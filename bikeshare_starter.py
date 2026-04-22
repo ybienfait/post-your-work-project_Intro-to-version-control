@@ -1,6 +1,6 @@
 import time
-import pandas as pd
-import numpy as np
+#import pandas as pd
+#import numpy as np
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -16,14 +16,29 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    # Get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    while True:
+        city = input('Which city would you like to explore? (chicago, new york city, washington): ').lower().strip()
+        if city in CITY_DATA:
+            break
+        print('Invalid input. Please enter chicago, new york city, or washington.')
 
+    # get user input for month (all, january, february, ... , june)
+    valid_months = ['all', 'january', 'february', 'march', 'april', 'may', 'june',
+                    'july', 'august', 'september', 'october', 'november', 'december']
+    while True:
+        month = input('Which month? (all, january, february, ..., december): ').lower().strip()
+        if month in valid_months:
+            break
+        print('Invalid input. Please enter a month name, or all.')
 
-    # Get user input for month (all, january, february, ... , june)
-
-
-    # Get user input for day of week (all, monday, tuesday, ... sunday)
-
+    # get user input for day of week (all, monday, tuesday, ... sunday)
+    valid_days = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+    while True:
+        day = input('Which day? (all, monday, tuesday, ..., sunday): ').lower().strip()
+        if day in valid_days:
+            break
+        print('Invalid input. Please enter a day of the week, or all.')
 
     print('-'*40)
     return city, month, day
@@ -40,7 +55,6 @@ def load_data(city, month, day):
     Returns:
         df - Pandas DataFrame containing city data filtered by month and day
     """
-
 
     return df
 
@@ -119,7 +133,25 @@ def user_stats(df):
 
 
 def main():
+    sleeptime = 2
     while True:
+        reloop = input('\nGood Morning! Welcome to the Bikeshare project. Would you like to "start", "exit" or "get help"?\n')
+        if reloop.lower() == 'start':
+            print('\nGreat! Let\'s get started!')
+            time.sleep(sleeptime)
+            sleeptime += 2
+            continue
+        elif reloop.lower() == 'exit':
+            print('\AAAWW! Goodbye then!')
+            time.sleep(sleeptime)
+            sleeptime += 2
+            continue
+        else:
+             print('\nLet\'s get you some help then...')
+             time.sleep(sleeptime)
+             sleeptime += 2
+             continue
+
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
