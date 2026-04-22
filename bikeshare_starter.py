@@ -137,7 +137,7 @@ def main():
     sleeptime = 2
     while True:
         reloop = input('\nGood Morning! Welcome to the Bikeshare project. Would you like to "start", "exit" or "get help"?\n')
-        if reloop.lower() != 'start':
+        if reloop.lower() == 'start':
             print('\nGreat! Let\'s get started!')
             time.sleep(sleeptime)
             sleeptime += 2
