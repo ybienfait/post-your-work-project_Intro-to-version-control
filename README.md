@@ -1,27 +1,44 @@
->**Note**: Please **fork** this Udacity repository so you have a **remote** repository in **your** GitHub account. Then you can clone the remote repository to your local machine. Later, as a part of the project, you will push your changes to the remote repository in your GitHub account.
+## 🚲 Project Summary
+
+**Bikeshare** is a Python project for exploring and analyzing bikeshare usage data. It provides simple tools to load, clean, and analyze trip records from public bikeshare systems, helping users understand usage patterns such as popular stations, ride durations, and peak usage times.
 
 
-# Project Title
+## 📊 Usage
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/bikeshare.git
+   cd bikeshare
+   ```
+2. **Install dependencies**
+    ```bash
+    pip install -r requirements.txt
+    ```
+3. **Run the analysis**
+    ```bash
+    python bikeshare.py
+    ```
+4. **Input selection**
 
-Describe what your project is about and what it does
+    When prompted, select a city, month, and day to filter the bikeshare data. The program will output summary statistics directly in the terminal.
 
-## Information about how to use your project
 
-This could include:
+## 🤝 Contributing
+Contributions are welcome! To contribute:
 
-- Step-by-step instructions for installing or setting up your project.
-- Any software dependencies that need to be installed.
-- Instructions and examples for how to use your project, including any helpful code snippets.
-- Common issues and troubleshooting tips
+* Fork the repository on GitHub
+* Create a new branch for your feature or bug fix
+* Write clear, well-documented code
+* Add or update tests where applicable
+* Open a pull request with a concise description of your changes
 
-## Contribution guidelines
+Please follow PEP 8 style guidelines and keep commits small and focused.
 
-If you welcome contributions, provide guidelines on how others can contribute to your project.
+## 🙌 Credits
 
-## Credits
-
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+* Project created and maintained by the Bikeshare development team
+* Sample data inspired by public bikeshare datasets (e.g., city open data portals)
 
 ## Date created
 
-Include the date you created this project and README file.
+README:         22 April 2026
+Project V0.1:   22 April 2026
